@@ -1,0 +1,17 @@
+# 指定策略中会用到的角色
+identities:
+  # Org1MSP 中的 member
+  user1: {"role": {"name": "peer", "mspId": "Org1MSP"}}
+  # Org2MSP 中的 member
+  user2: {"role": {"name": "peer", "mspId": "Org2MSP"}}
+  # Org1MSP 中的 admin
+  #admin1: {"role": {"name": "admin", "mspId": "Org1MSP"}}
+  # Org2MSP 中的 admin
+  #admin2: {"role": {"name": "admin", "mspId": "Org2MSP"}}
+
+policy:
+  # n-of 指定需要组内多少个进行签名， 1-of 等价于 OR, max-of 等价于AND
+  2-of:
+        # user1 即上面角色中的 user1
+        - signed-by: "user1"
+        - signed-by: "user2"
