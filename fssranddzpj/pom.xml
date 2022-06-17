@@ -20,7 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<fabric.sdk.java.version>1.4.1</fabric.sdk.java.version>
-		<fastjson.version>1.2.51</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<lombok.version>1.18.4</lombok.version>
 		<json.lib.version>2.4</json.lib.version>
 		<xom.version>1.2.5</xom.version>
